@@ -8,7 +8,7 @@ public interface Main {
 		//Voice.getAvailableVoices().stream().forEach(System.out::println);
 		tts.setVoice("istc-lucia-hsmm");
 		tts.setAudioEffect("Rate(durScale:2.0)");
-		tts.speak("Ciao Angelo Marini", 2.0f, false, true);
+		tts.speak("Ciao Angelo", 2.0f, false, true);
 		
 		
 	}
