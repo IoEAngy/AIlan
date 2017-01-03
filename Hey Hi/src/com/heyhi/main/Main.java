@@ -9,7 +9,7 @@ public interface Main {
 		tts.setVoice("istc-lucia-hsmm");
 		tts.setAudioEffect("Rate(durScale:2.0)");
 		tts.speak("Ciao Angelo", 2.0f, false, true);
-		
+		//Funge
 		
 	}
 }
