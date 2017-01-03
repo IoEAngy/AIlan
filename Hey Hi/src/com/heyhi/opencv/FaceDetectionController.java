@@ -257,8 +257,8 @@ public class FaceDetectionController
              
              if(preAvgX < currentAvgX -10 || preAvgX > currentAvgX +10 || preAvgY < currentAvgY -10 || preAvgY > currentAvgY +10){
             	
-            	 a.sendXY(currentAvgX, currentAvgY);
-             	//  sds.SendDataToArduino(currentAvgX, currentAvgY);
+            	a.sendXY(currentAvgX, currentAvgY);
+            //   a.sds.SendDataToArduino(currentAvgX, currentAvgY);
              	  preAvgX = currentAvgX;
              	  preAvgY = currentAvgY;
                }

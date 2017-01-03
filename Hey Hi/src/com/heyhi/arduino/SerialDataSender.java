@@ -10,7 +10,7 @@ import java.util.Enumeration;
 
 
 public class SerialDataSender {
-	private static final String PORT = "COM4";
+	private static final String PORT = "COM5";
 	private static final int TIME_OUT = 2000;
 	private static final int DATA_RATE = 9600;
 	 
@@ -60,8 +60,11 @@ public class SerialDataSender {
 			 sData= sX + "-" + sY + "@";
 			 outputWriter.write(sData);	
 			 outputWriter.flush();
+			 if(output != null){
+				 System.out.println("X: " + sX+ " Y: " + sY );
 			 bOut.writeTo(output);
 			 bOut.reset();
+			 }
 		 } catch (Exception e) {
 			e.printStackTrace();
 		}
